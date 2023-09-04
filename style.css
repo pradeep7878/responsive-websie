@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container-fluid{
+    padding: 0;
+}
+#navbar{
+    background-color: black !important;
+    padding: .6rem 3rem;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    box-shadow: 0 0 10px #000;
+}
+#navbarSupportedContent ul li{
+    margin: 0 1rem;
+}
+.navbar-brand{
+    color: rgb(252, 174, 18);
+    font-size: 1.7rem;
+}
+.navbar-brand #logo{
+    width: 50px;
+    height: 50px;
+}
+.navbar-brand:hover{
+    color: coral;
+    font-size: 1.7rem;
+}
+#navbarSupportedContent .nav-link{
+    color: white;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s;
+}
+#navbarSupportedContent .nav-link:hover{
+    color: white;
+    border-bottom: 1px solid coral;
+}
+#navbarSupportedContent button{
+    background-color: seagreen;
+    color: #fff;
+}
+#navbarSupportedContent button:hover{
+    background-color: rgb(86, 199, 135);
+    color: #fff;
+}
+.navbar-toggler{
+    background-color: yellow;
+}
+.navbar-toggler:active{
+    background-color: rgb(230, 230, 101);
+}
+
+
+/* HOME---------------------------------------- */
+
+.banner{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("assets/images/banner1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.banner h1{
+    font-size: 6rem;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px white;
+    font-family: 'Open Sans', sans-serif;
+}
+.banner p{
+    font-size: 1.1rem;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+.banner form{
+    display: flex;
+    margin-top: .9rem;
+    width: 400px;
+}
+.banner form input{
+    border: none;
+    outline: none;
+}
+.banner form input:focus{
+    box-shadow: 0 0 3px 1px white;
+}
+.banner button{
+    background-color: seagreen;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+.banner button:hover{
+    background-color: rgb(3, 131, 58);
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ABOUT----------------------------------------- */
+
+.about{
+    padding: 5rem;
+    background-color: #dff2d4;
+}
+.about img{
+    width: 80%;
+}
+.about h1{
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 1.5rem;
+}
+.about h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+.about p{
+    text-align: justify;
+}
+.about p::first-letter{
+    font-size: 1.4rem;
+}
+
+
+
+/* OUR CLIENTS----------------------------------------- */
+
+.our-clients{
+    padding: 2rem;
+    background-color: rgb(244, 151, 205);
+}
+.our-clients h1{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 1.5rem;
+}
+.our-clients img{
+    width: 80%;
+}
+
+
+
+
+
+/* PRODUCTS----------------------------------------- */
+
+.products {
+    background-color: #ddd;
+    padding: 4rem 2rem;
+}
+.products h1{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 1.5rem;
+}
+.products .card-rows{
+    width: 85%;
+    margin: 0 auto;
+}
+.products .card{
+    width: 100%;
+    padding: 1rem 0;
+    background-color: #ddd;
+    margin: 1.5rem auto;
+    border: none;
+    text-align: center;
+    box-shadow: 10px 20px 10px rgba(0, 0, 0,0.3),
+                inset 5px 5px 10px rgba(255, 255, 255,0.5);
+}
+.products .card:hover{
+    cursor: pointer;
+    box-shadow: 4px 4px 5px  rgba(255, 255, 255, 0.05),
+                inset 5px 5px 10px  rgba(0, 0, 0,0.5);
+}
+.products .card img{
+    width: 70%;
+    margin: 1rem auto;
+}
+
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 2rem;
+    overflow: hidden;
+    justify-content: center;
+}
+.product-list{
+    position: relative;
+
+}
+.product-list ul{
+    background-color: #ddd;
+    display: none;
+}
+.product-list:hover ul{
+    background-color: #f8f6f6;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+}
+.product-list ul li{
+    list-style: none;
+    margin: .1rem  0;
+}
+.product-list ul li a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* CONTACT--------------------------------------- */
+
+.contact {
+    background-color: rgb(158, 211, 227);
+    padding: 3rem 4rem;
+}
+.contact h1{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 3rem;
+}
+.contact input,
+.contact textarea{
+    margin: 1.5rem;
+    width: 90%;
+}
+.contact .btn{
+    margin: 0.3rem 1.5rem;
+
+}
+
+
+
+/* CALL TO ACTION----------------------------------------- */
+
+.bot-div {
+    position: fixed;
+    bottom: 300px;
+    right: 15px;
+    width: 50px;
+    height: 40px;
+    color: #ffffff;
+	font-size: 14px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	line-height: 38px;
+	text-align: center;
+	z-index: 1000;
+	cursor: pointer;
+	/*background: #8A2BE2;*/
+	transition:all 1s linear;
+}
+.bot-div .social-media:hover {
+    transform:translateX(-4px);
+}
+
+
+
+/* FOOTER----------------------------------------- */
+
+footer{
+    background-color: #121111;
+    height: 3rem;
+}
+footer p{
+    color: white;
+    text-align: center;
+    transform: translateY(50%);
+}
+
+
+
+
+
+
+/* ANIMAION CSS----------------------------------------- */
+
+.reveal {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  .reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+  }
+
+.our-clients img{
+    animation-name: clients;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes clients{
+    0%{
+        transform: translateX(100px);
+    }
+    50%{
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(100px);
+    }
+}
+
+
+
+/* MEDIA QUERIES--------------------------------- */
+
+@media (max-width:576px){
+    html{
+        font-size: .9rem !important;
+    }
+
+    .banner h1{
+        font-size: 4rem;
+        text-align: center;
+        color: white;
+        text-shadow: 0 0 10px white;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .banner p{
+        font-size: .8rem;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .banner form{
+        display: flex;
+        flex-direction:column;
+        margin-top: .9rem;
+        width: 200px;
+        font-size: .8rem;
+    }
+    .banner button{
+        font-size: .8rem;
+        background-color: seagreen;
+        color: #fff;
+        border: none;
+        outline: none;
+        width: 80px;
+        margin: .3rem auto;
+    }
+
+    .about{
+        padding: 0 1.6rem;
+    }
+    .products{
+        padding: 2rem 1.7rem;
+    }
+    .our-clients img{
+        width: 40% !important;
+    }
+    .our-clients .row .col-sm-6{
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    .about {
+        padding-top: 2.5rem;
+    }
+    .about img{
+        width: 50%;
+    }
+    .about h1,
+    .about h4{
+        text-align: center;
+    }
+
+    .products .card{
+        width: 80%;
+    }
+
+    .our-clients img{
+        width: 60%;
+    }
+}
+
+
+
